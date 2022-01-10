@@ -1,9 +1,12 @@
+import background from '../assets/background.jpg'
+import phoneImg from '../assets/phone.png'
+import adressImg from '../assets/adress.png'
 const contactPage=()=>{
     const content = document.querySelector('.pageContainer');
     const contact = document.createElement('div');
     contact.classList.add('contact','page');
     content.appendChild(contact);
-    contact.style.backgroundImage = "url('./assets/background.jpg')";
+    contact.style.backgroundImage = `url(${background})`;
 
     const container = document.createElement('div')
     container.classList.add('container');
@@ -16,12 +19,12 @@ const contactPage=()=>{
 
     const phone = document.createElement('div')
     phone.classList.add('phone')
-    phone.innerHTML = '<img src="assets/phone.png"> 123 465 789'
+    phone.innerHTML = `<img src="${phoneImg}"> 123 465 789`
     container.appendChild(phone)
 
     const adress = document.createElement('div');
     adress.classList.add('adress')
-    adress.innerHTML = '<img src="assets/adress.png"> Fake street 123'
+    adress.innerHTML = `<img src="${adressImg}"> Fake street 123`
     container.appendChild(adress)
 
     const map = document.createElement('div');

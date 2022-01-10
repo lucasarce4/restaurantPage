@@ -1,4 +1,6 @@
-
+import background from '../assets/background.jpg'
+import pizza from '../assets/pizza.png'
+import burger from '../assets/burger.png'
 
 const homePage=()=>{
     const content = document.querySelector('.pageContainer');
@@ -6,7 +8,7 @@ const homePage=()=>{
     home.classList.add('home','page');
     content.appendChild(home);
 
-    home.style.backgroundImage = 'url(assets/background.jpg)';
+    home.style.backgroundImage = `url(${background})`;
 
     const logoCont = document.createElement('div');
     logoCont.classList.add('logoCont')
@@ -16,14 +18,14 @@ const homePage=()=>{
    logoImgPizza.classList.add('pizzaImg')
    logoCont.appendChild(logoImgPizza);
    const imgPizza = document.createElement('img')
-   imgPizza.src = "assets/pizza.png";
+   imgPizza.src = pizza;
    logoImgPizza.appendChild(imgPizza);
 
    const logoImgHamb = document.createElement('div');
    logoImgHamb.classList.add('hambImg')
    logoCont.appendChild(logoImgHamb);
    const imgHamb = document.createElement('img')
-   imgHamb.src = "assets/burger.png";
+   imgHamb.src = burger;
    logoImgHamb.appendChild(imgHamb);
 
    const name = document.createElement('div')
