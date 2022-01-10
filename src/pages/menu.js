@@ -4,7 +4,7 @@ const menuPage=()=>{
     menu.classList.add('menu','page');
     content.appendChild(menu);
 
-    menu.style.backgroundImage = "url('/assets/background.jpg')";
+    menu.style.backgroundImage = "url('assets/background.jpg')";
 
     const menuItem=(foodName,foodPrice,foodImg,foodDescription)=>{
         const item = document.createElement('div');
@@ -34,10 +34,10 @@ const menuPage=()=>{
         textContainer.appendChild(description)
     }
 
-    menuItem('Pizza burger','10$',"/assets/pizzaburger.jpg",'Burger with pizza instead of bread')
-    menuItem('Cheddar burger','8$','/assets/cheddarBurger.jpg','Cheddar, bacon, onions, and double patty')
-    menuItem('Cheese pizza','12$','/assets/pizzaClassic.jpg','Classic cheese pizza')
-    menuItem('Special pizza','15$','/assets/pizzaEspecial.jpg','Cheese, ham,olives,hard boiled egg, and bell peppers')
+    menuItem('Pizza burger','10$',"assets/pizzaburger.jpg",'Burger with pizza instead of bread')
+    menuItem('Cheddar burger','8$','assets/cheddarBurger.jpg','Cheddar, bacon, onions, and double patty')
+    menuItem('Cheese pizza','12$','assets/pizzaClassic.jpg','Classic cheese pizza')
+    menuItem('Special pizza','15$','assets/pizzaEspecial.jpg','Cheese, ham,olives,hard boiled egg, and bell peppers')
 
 }
 

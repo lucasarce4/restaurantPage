@@ -41,9 +41,12 @@
 
 .phone,
 .adress{
+    display: flex;
+    align-items: center;
+    gap:15px;
     font-size: 2.5rem;
     margin: 10px;
-    margin-left:50px ;
+    margin-left:20px ;
 }
 
 .fa-home{

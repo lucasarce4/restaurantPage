@@ -13,7 +13,7 @@ const pageContainer = document.createElement('div');
 pageContainer.classList.add('pageContainer')
 document.querySelector('#content').appendChild(pageContainer)
 
-document.querySelector('body').setAttribute('onload',contactPage());
+document.querySelector('body').setAttribute('onload',homePage());
 
 const buttons = document.querySelectorAll('.buttons'); 
 buttons.forEach(button =>{
