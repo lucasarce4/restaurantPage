@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+#content{
+    min-width: 100vh;
+    min-height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color:rgba(10,10,10, 0.95) ;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 1px solid black;
+    z-index: 100;
+}
+
+.linkContainer button{
+    margin-left:40px;
+    background: none;
+    border: none;
+    padding: 5px;
+    width: 121px;
+    border-bottom:2px solid white ;
+    font-size: 2rem;
+    color: white;
+}
+
+.linkContainer button:focus{
+    border-bottom:2px solid rgba(0,255,255,0.3);
+}
