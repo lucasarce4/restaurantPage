@@ -3,7 +3,7 @@ const contactPage=()=>{
     const contact = document.createElement('div');
     contact.classList.add('contact','page');
     content.appendChild(contact);
-    contact.style.backgroundImage = "url('assets/background.jpg')";
+    contact.style.backgroundImage = "url('./assets/background.jpg')";
 
     const container = document.createElement('div')
     container.classList.add('container');
